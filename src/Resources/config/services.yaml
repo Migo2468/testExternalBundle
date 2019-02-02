@@ -1,0 +1,9 @@
+services:
+  migo2468.test_external.command.dictate_scructure:
+    class: Migo2468\TestExternal\Command\DictateStructureCommand
+    tags:
+    - { name: console.command }
+    arguments:
+      $controller: '%migo2468.test_external.controller%'
+      $repository: '%migo2468.test_external.repository%'
+      $factory: '%migo2468.test_external.factory%'
